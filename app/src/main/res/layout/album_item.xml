@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="150dp"
+    android:layout_margin="7dp"
+    android:background="#FFFFFF"
+    android:clickable="true"
+    android:focusable="true"
+    android:longClickable="true"
+    >
+
+    <ImageView
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:id="@+id/album_frag_art"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="top"
+        android:background="#222222"
+        android:scaleType="centerCrop"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:id="@+id/bottomHolder"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/album_frag_art"
+        android:layout_centerHorizontal="true"
+        android:gravity="bottom">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="23dp"
+            android:id="@+id/item_title_album"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="Title"
+            android:textAlignment="center"
+            android:textColor="#222"
+            android:textSize="13dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="19dp"
+            android:id="@+id/item_artist_album"
+            android:layout_below="@id/item_title_album"
+            android:layout_marginTop="-5dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="Artist"
+            android:textAlignment="center"
+            android:textColor="#222222"
+            android:textSize="9dp"
+            />
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
